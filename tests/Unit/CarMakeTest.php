@@ -16,7 +16,7 @@ class CarMakeTest extends TestCase
      */
     public function testExample()
     {
-         $this->assertContains(Car::first()->make, ['ford','honda','toyota'] );
+         $this->assertContains(cars::first()->make, ['ford','honda','toyota'] );
    
     }
 }
