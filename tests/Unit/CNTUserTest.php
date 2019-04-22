@@ -16,7 +16,7 @@ class CountUserTest extends TestCase
      */
     public function testExample()
     {
-        $user = User::where('is_seed', 1)->count();;
+        $user = Users::where('is_seed', 1)->count();;
 
     	$result = ($user == 50)?true:false;
 
