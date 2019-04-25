@@ -67,6 +67,10 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <!-- Constact us Link -->
+                    <a class="nav-link" href="{{ route('contactus') }}">Contact us</a>
+                    <!-- About us Link -->
+                    <a class="nav-link" href="{{ route('aboutus') }}">About us</a>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -97,3 +101,4 @@
         </div>
     </body>
 </html>
+
