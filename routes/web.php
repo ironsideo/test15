@@ -27,6 +27,10 @@ Route::get('/home', function () {
     return view('pages.home');
 });
 
+Route::get('/register', function () {
+    return view('pages.register');
+});
+
 Route::post('/contact', function ()  {
 
     $data = request()->all();
