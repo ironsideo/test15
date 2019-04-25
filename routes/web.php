@@ -23,6 +23,10 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
+Route::get('/home', function () {
+    return view('pages.home');
+});
+
 Route::post('/contact', function ()  {
 
     $data = request()->all();
